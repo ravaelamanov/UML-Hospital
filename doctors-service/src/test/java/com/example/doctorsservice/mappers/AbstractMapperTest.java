@@ -1,11 +1,11 @@
 package com.example.doctorsservice.mappers;
 
-import com.example.doctorsservice.dtos.DoctorDTO;
-import com.example.doctorsservice.dtos.ScheduleDTO;
-import com.example.doctorsservice.dtos.WorkingDayDTO;
 import com.example.doctorsservice.model.Doctor;
 import com.example.doctorsservice.model.Schedule;
 import com.example.doctorsservice.model.WorkingDay;
+import com.example.dtos.doctors.DoctorDTO;
+import com.example.dtos.doctors.ScheduleDTO;
+import com.example.dtos.doctors.WorkingDayDTO;
 
 import java.time.LocalTime;
 import java.util.ArrayList;

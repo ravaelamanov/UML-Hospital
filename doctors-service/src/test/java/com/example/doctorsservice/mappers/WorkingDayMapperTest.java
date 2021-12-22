@@ -1,7 +1,7 @@
 package com.example.doctorsservice.mappers;
 
-import com.example.doctorsservice.dtos.WorkingDayDTO;
 import com.example.doctorsservice.model.WorkingDay;
+import com.example.dtos.doctors.WorkingDayDTO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

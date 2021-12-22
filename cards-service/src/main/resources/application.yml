@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/cards
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+doctors:
+  base-url: http://localhost:8080/doctors

@@ -1,4 +1,4 @@
-package com.example.doctorsservice.dtos;
+package com.example.dtos.doctors;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

@@ -3,13 +3,12 @@ package com.example.doctorsservice.services;
 import com.example.doctorsservice.exceptions.NotFoundException;
 import com.example.doctorsservice.model.Doctor;
 import com.example.doctorsservice.repositories.DoctorRepository;
+import com.querydsl.core.types.Predicate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Component
 public class DoctorService {
@@ -33,12 +32,10 @@ public class DoctorService {
         return doctorRepository.save(doctor);
     }
 
-    public List<Doctor> findAll(Optional<Boolean> isAvailableOptional) {
-        if (isAvailableOptional.isPresent()) {
-            return doctorRepository.findDoctorByIsAvailable(isAvailableOptional.get());
-        }
-        else {
-            return doctorRepository.findAll();
-        }
+    public List<Doctor> findAll(Predicate predicate) {
+        Iterable<Doctor> all = doctorRepository.findAll(predicate);
+        List<Doctor> allList = new ArrayList<>();
+        all.iterator().forEachRemaining(allList::add);
+        return allList;
     }
 }

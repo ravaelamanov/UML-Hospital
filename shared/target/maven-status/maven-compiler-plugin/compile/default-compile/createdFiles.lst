@@ -1,0 +1,14 @@
+com/example/dtos/appointments/AppointmentDTO.class
+com/example/dtos/doctors/WorkingDayDTO.class
+com/example/dtos/doctors/ScheduleDTO.class
+com/example/dtos/doctors/DoctorDTO.class
+com/example/dtos/doctors/DoctorWithIdDTO.class
+com/example/dtos/cards/MedicalHistoryDTO.class
+com/example/dtos/cards/DiagnoseDTO.class
+com/example/dtos/cards/PrescriptionDTO.class
+com/example/dtos/cards/PatientDTO.class
+com/example/dtos/cards/MedicalCardDTO.class
+com/example/dtos/appointments/AppointmentDTO$Status.class
+com/example/dtos/cards/DiagnoseDTO$Type.class
+com/example/dtos/cards/PrescriptionEntryDTO.class
+com/example/dtos/cards/SickLeaveDTO.class

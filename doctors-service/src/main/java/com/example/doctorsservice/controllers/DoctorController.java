@@ -1,17 +1,18 @@
 package com.example.doctorsservice.controllers;
 
-import com.example.doctorsservice.dtos.DoctorDTO;
-import com.example.doctorsservice.dtos.DoctorWithIdDTO;
 import com.example.doctorsservice.mappers.DoctorMapper;
 import com.example.doctorsservice.model.Doctor;
 import com.example.doctorsservice.services.DoctorService;
+import com.example.dtos.doctors.DoctorDTO;
+import com.example.dtos.doctors.DoctorWithIdDTO;
+import com.querydsl.core.types.Predicate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.querydsl.binding.QuerydslPredicate;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
@@ -29,8 +30,8 @@ public class DoctorController {
 
 
     @GetMapping
-    public List<DoctorWithIdDTO> getDoctors(@RequestParam("available") Optional<Boolean> isAvailable) {
-        return doctorService.findAll(isAvailable).stream()
+    public List<DoctorWithIdDTO> getDoctors(@QuerydslPredicate(root = Doctor.class) Predicate predicate) {
+        return doctorService.findAll(predicate).stream()
                 .map(this::toDoctorWithIdDTO)
                 .collect(Collectors.toList());
     }

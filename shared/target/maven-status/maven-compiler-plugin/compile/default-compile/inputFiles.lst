@@ -1,0 +1,12 @@
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/cards/MedicalHistoryDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/cards/MedicalCardDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/cards/PrescriptionDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/doctors/ScheduleDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/cards/DiagnoseDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/doctors/DoctorWithIdDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/cards/PatientDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/cards/PrescriptionEntryDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/doctors/DoctorDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/doctors/WorkingDayDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/cards/SickLeaveDTO.java
+/home/ravaelamanov/itmo/uml/hospital/shared/src/main/java/com/example/dtos/appointments/AppointmentDTO.java
